@@ -158,7 +158,7 @@ class CommandLineArguments(parser: ArgParser) {
 
         val today = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG).format(todays_date)
 
-        val exactTimeStamp = LocalDateTime.now()
+        val exactTimeStamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-d'T'HH:mm:ss"))
 
         /** Grab centroid from meta file */
 

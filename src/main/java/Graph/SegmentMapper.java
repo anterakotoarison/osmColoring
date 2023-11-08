@@ -457,7 +457,7 @@ public class SegmentMapper {
      * Reads the region-meta json file to get the latest timestamp
      * */
     private static LocalDateTime getDate(CommandLineArguments cla){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-d'T'HH:mm:ss.SSSSSS");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-d'T'HH:mm:ss");
         LocalDateTime dateTime = null;
         File file = cla.getMetaJsonFile();
         if (file.exists()){
