@@ -47,8 +47,10 @@ public class Segment {
                 ? "#d7191c"
                 : score < 0.5 && score >= 0.25
                 ? "#ff6600"
-                : score >= 0.1
+                : score < 0.2 && score >= 0.1
                 ? "#ffff00"
+                : score >= 0.04
+                ? "#8DCB21"
                 : "#1a9641";
     }
     public String detailJson() {
